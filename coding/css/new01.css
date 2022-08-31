@@ -1,0 +1,170 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #14B2BD;}
+ul,ol{list-style: none;}
+body{display: flex; background-color: #EFF0F2;}
+
+div#wrap{width :1440px;   height:900px;}
+
+header{position: fixed;}
+
+nav {float: left;width:1440; height: 840px;}
+nav ul.gnb{float: left;width: 64px;height: 100%;}
+nav ul.gnb > li{font-size: 22px;cursor: pointer;width: 64;height: 64px; text-align: center;outline: 1px solid #14B2BD;background-color: #EFF0F2;line-height: 64px;}
+nav ul.gnb > li:hover{background-color: #fff; }
+
+nav ul.gnb2 {width:660px;float: left;}
+nav ul.gnb2 span{ margin: 20px;}
+nav ul.gnb2 li:last-child{background-color: #fff;width: 300px;border-bottom-right-radius: 30px;text-align: right;position: absolute;left: 310px;z-index: -1;}
+nav ul.gnb2 > li{text-align: center; width: 64px; height: 56px;line-height: 56px; float: left; background-color: #2D3B4D;outline: 1px solid #14B2BD;}
+nav ul.gnb2 > li:hover{color:#6570ff ;}
+nav ul.gnb2 > li:nth-of-type(4){border-bottom-right-radius: 20px;}
+nav div.search{ background-color: #fff;width: 600px;height: 600px;outline: 1px solid blue;}
+
+nav ul.gnb3{float: left;position: absolute;border-right: 1px solid #14B2BD;border-bottom: 1px solid #14B2BD; margin-left: 64px;margin-top: 52px;z-index: -1;}
+nav ul.gnb3 >li{width:216px; top:68px; text-align: center;line-height: 68px; margin-top: 10px;cursor: pointer;}
+nav ul.gnb3 >li:hover { background-color: #fff; }
+
+
+
+div#outbox{
+  width: 1200px; height:702px;
+  outline: 1px solid #14B2BD;position: fixed; border-top-left-radius: 20px;border-top-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.406);top: 120px; left: 310px;
+}
+
+div#outbox section:nth-child(1){
+  width: 350px;height: 640px;outline: 1px solid #14B2BD;position: absolute; margin: 30px;
+  border-radius: 20px;float: left;
+}
+
+section article ul.about{ width: 350px; height: 120px; background-color: #fff;border-radius: 20px;position: fixed; z-index: 10;}
+section article ul.about button{ width: 30px;height: 30px;border-radius: 50%;border: none;background-color: #6570ff;position: absolute; top: 76px; right: 10px;}
+section article ul.about input{position: relative; width: 250px;height:30px; border-radius:20px ; left: 50px;top: 30px;border: 1px solid rgba(85, 85, 85, 0.202); text-align: center;overflow: hidden;}
+
+
+div#outbox {position: fixed; border-radius: 20px;}
+div#outbox section.scroll {overflow-y: scroll; height:650px;overflow-x: none;}
+div#outbox section.scroll::-webkit-scrollbar {  display: none;}
+div#outbox section.scroll::-webkit-scrollbar-thumb {
+height: 30%; background: #d5d5d5;border-radius:10px;}
+div#outbox section.scroll::-webkit-scrollbar-track {display: none;}
+
+
+
+
+section.scroll article div.box1{ width: 318px; height: 220px; background-color: #6570ff;position: absolute; border-radius: 20px; left: 15px; top: 130px;} 
+section.scroll article div.box1 ul.innerbox1{position: absolute; padding:30px; top:10px; height: 200px;} 
+section.scroll article div.box2{ width: 318px; height: 220px; background-color: #fff;position: absolute; border-radius: 20px;top: 350px;left: 16px;}
+section.scroll article div.box2 .innerbox2{
+  font-size: 12px;line-height: 1.5; margin: 20px;
+}
+section.scroll article div.box3{ width: 318px; height: 220px; background-color: #6570ff;position: absolute; border-radius: 20px;top:570px;left: 16px;}
+
+
+
+div#outbox section:nth-child(2){
+  width: 754px;height: 152px;outline: 1px solid #14B2BD;position: absolute; margin-top: 30px;
+  border-radius: 20px;right: 30px;
+}
+
+
+div#outbox section:nth-child(3){
+  width: 754px;height: 462px;outline: 1px solid #14B2BD;position: absolute; bottom: 30px;
+  border-radius: 20px;right: 30px;
+}
+
+article.aboutme{
+  width: 448px; height: 180px; outline: 1px solid #14B2BD;border-radius: 20px;margin: 10px;
+}
+article.work{
+  width: 448px; height: 252px; outline: 1px solid #14B2BD;border-radius: 20px; margin: 10px;position: relative;
+}
+article div.todo{
+  width: 270px; height: 442px; outline: 1px solid #14B2BD;border-radius: 20px; position:relative;  top: -450px;left: 470px;
+}
+article h3{
+  font-weight: bold; padding-top: 20px; padding-left: 20px;
+}
+article div.todo div.cover h3{
+  font-weight: bold; position: absolute; color: #656fff87;left: 70px;
+}
+article.work p{position: absolute;margin: 20px;}
+article.work button{position: absolute;margin: 20px; top: 170px;left: 90px; padding: 6px;border-radius: 20px;border: none; background-color: #6570ff;width: 100px;cursor: pointer;}
+article.work button:nth-of-type(2){position: absolute;margin: 20px; top: 168px;left: 220px; padding: 6px;border-radius: 20px;border: none; background-color: #6570ff;width: 100px;}
+  
+article.skils {position: relative; }
+
+article.skils ul li img{position: relative; float: left; width: 50px;height: 50px;margin: 4px; left: 30px;top: 60px;}
+article.skils ul li h3{position: absolute; }
+
+article.aboutme li img{width:100px;height: 100px;border-radius: 20px;background :cover/contain;float: left;margin: 20px;}
+article.aboutme li h5{ float: left;font-weight: bold;}
+article.aboutme li p{float:left; font-size: 9px;width: 260px;}
+article.aboutme li button{width: 100px; border: none;background-color: #6570ff; height: 30px;border-radius: 20px;position: absolute; bottom:290px; left: 240px;cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3{z-index: 3;}
+
+form{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;position: absolute;
+  height: 100px;background-color: #fff; top: 0px;border-top-left-radius: 20px;border-top-right-radius: 20px;z-index: 1;
+}
+.input{
+  border: none;
+  color: #444;
+  padding: 10px;
+  font-size: 1rem;
+  display: block;
+  width: 200px;
+  position: relative;
+  top: 380px;
+  left: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.input::placeholder{
+  color: #d5d5d5;
+}
+input:focus{
+  outline-color: #656fff6c;
+}
+
+.todos{
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li{
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.todos li.completed{
+  color: #d6d6d6;
+  text-decoration: line-through;
+}
