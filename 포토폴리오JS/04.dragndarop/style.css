@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+body{display: flex;align-items: center;justify-content: center;height: 100vh;overflow: hidden;margin: 0;background-color: lightblue;}
+
+.empty{height: 150px; width:150px;margin: 10px;border: 3px solid tomato; background-color: #eee;}
+
+.fill{
+  background: url(../img/tomatoes-5356_640.jpg); width:150px; height:150px;cursor: pointer;
+}
+.hold{border: 5px solid #ccc;}
+.hoverd{background-color: #333;border-color: #fff;border-style: dashed;}
+
+@media (max-width: 800px){
+  body{
+    flex-direction: column;
+  }
+}
