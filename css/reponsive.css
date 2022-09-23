@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .section-inner {
+    padding: 20px;
+    width: 100%;
+  }
+  .practical-item {
+    width: 100%;
+  }
+  .practical-content h4 {
+    margin-left: 20px;
+  }
+}

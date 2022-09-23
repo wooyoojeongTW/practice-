@@ -1,0 +1,113 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+/* Remix Icon */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Section Layout & Title */
+.section-inner {
+  width: 1280px;
+  margin: 50px auto;
+}
+.section-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* ####### PRACTICAL SECTION ####### */
+.practical-content h4 {
+  position: relative;
+  font-family: 'Noto sans KR', sans-serif;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.practical-item {
+  margin: 0 5px;
+}
+.practical-item:hover img {
+  border: 1px solid #f5e8d1;
+}
+.practical-item img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #f5e8d1;
+  transition: 0.35s;
+}
+
+/* Custom CSS : Slick */
+.practical-slider .slick-prev {
+  left: -40px;
+}
+.practical-slider .slick-prev:before {
+  content: '\ea64';
+  font-family: remixicon;
+  color: #e29f29;
+  font-size: 35px;
+}
+.practical-slider .slick-next {
+  right: -30px;
+}
+.practical-slider .slick-next:before {
+  content: '\ea6e';
+  font-family: remixicon;
+  color: #e29f29;
+  font-size: 35px;
+}
+.practical-slider .slick-dots li button::before {
+  font-size: 30px;
+  color: #e29f29; 
+}
+
+/* Custom CSS : UIkit */
+.uk-lightbox {
+  background: #fff;
+}
+.uk-lightbox-toolbar {
+  background-color: transparent; 
+  margin: 10px;
+}
+.uk-lightbox-toolbar-icon {
+  color: #fff;
+  background-color: #e29f29;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.35s;
+}
+.uk-lightbox-toolbar-icon:hover {
+  background-color: #000;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+.uk-lightbox-iframe {
+  width: 100%; height: 100%;
+}
+/* 상단 닫기 버튼 항상 보이게 */
+.uk-transition-slide-top {
+  --uk-translate-y: 0;
+}
+/* Next Prev 버튼 항상 보이게 */
+.uk-transition-fade, 
+[class*=uk-transition-scale], 
+[class*=uk-transition-slide] {
+  opacity: 1;
+}
+
