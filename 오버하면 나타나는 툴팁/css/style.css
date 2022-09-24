@@ -1,0 +1,50 @@
+@charset "utf-8";
+body{
+  color: #707070;
+  line-height: 1.5rem;
+  margin: 0;
+}
+a{color: #707070;
+text-decoration: none;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icon{
+position: relative;
+width: 125px;
+height: 125px;
+margin: 10px;
+}
+
+.icon span{
+/* display: none; */
+position: absolute;
+background-color: #707070;
+color: #fff;
+width: 300px;
+top: -100px;
+text-align: center;
+padding: 10px;
+border-radius: 5px;
+left: 50%;
+transform: translateX(-50%);
+opacity: 0;visibility: hidden;
+transition: .5s;}
+
+.icon>span::after{
+  content: "";
+  position: absolute;
+  background-color: #707070;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translate(-50%);
+  bottom: -6px;
+  left: 50%;
+}
+.icon:hover span{
+opacity: 1;visibility: visible;}
