@@ -1,299 +1,267 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>우유정 포토폴리오</title>
-    <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/reponsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>풀스크린 네비게이션 반응형 포트폴리오 with jQuery</title>
+    <!-- jQuery CDN 3.5.1 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/portfolioSection.css" />
+    <link rel="stylesheet" href="css/publishingSection.css" />
+    <link rel="stylesheet" href="css/skillsSection.css" />
+    <link rel="stylesheet" href="css/aboutSection.css" />
 
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/script_main.js"></script>
-    <!--flugin-->
-    <script src="js/jquery.fullpage.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/custom.js" defer></script>
+    <script src="js/featherlight/featherlight.js"></script>
+  </head>
+  <body>
+    <div class="toggle">
+      <i class="xi-plus-thin"></i>
+    </div>
+    <div class="overlay"></div>
 
+    <ul class="gnb">
+      <li><a href="#feature1">Home</a></li>
+      <li><a href="#feature2">About</a></li>
+      <li><a href="#feature3">Publishing</a></li>
+      <li><a href="#feature4">Web Portfolio</a></li>
+      <li><a href="#feature5">Skills</a></li>
+      <li><a href="#feature6">Epilogue</a></li>
+    </ul>
 
-</head>
-
-<body>
-    <div class="wrap">
-        <header>
-            <div class="innerHeader">
-                <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-                <ul class="gnb">
-                    <li><a href="#section2">ABOUT</a></li>
-                    <li><a href="#section3">EDUCATION</a></li>
-                    <li><a href="#section4">SKILLS</a></li>
-                    <li><a href="#section5">PORTFOLIO</a></li>
-                    <li><a href="#section6">JAVASCRIPT</a></li>
-                </ul>
-            </div>
-        </header>
-        <!--contents-->
-        <div class="fullPageWrap">
-            <div id="fullpage">
-                <!--section1-->
-                <div class="section" id="section1">
-                    <ul class="visual">
-                        <li class="list">
-                            <div class="textBox">
-                                <p class="tit">MILK JUNG</p>
-                                <p class="txt">우유(Milk)같은 인재</p>
-                            </div>
-                        </li>
-                    </ul>
+    <div class="container">
+      <section class="welcome" id="feature1">
+        <img src="img/arrow.png" />
+        <h1>
+          MY <br />
+          ONLINE <br />BOOK
+        </h1>
+      </section>
+      <section id="feature2">
+        <div class="inner">
+          <div class="heading">
+            <b>Lorem ipsum dolor sit amet</b>
+            <h1>Section : About</h1>
+            <p>
+              우유는 생우유도 요구르트로도 치즈로도 변신할 수 있습니다. 지금은
+              우유지만 저를 성장시켜 주실 회사에 입사하여 좀 더 성숙한 치즈와
+              요구르트가 되고 싶습니다. 저는 무언가를 탐구하고 알아가는 것을
+              좋아합니다. 무언가를 연구하고 고민 끝에 저만의 방식을 찾아
+              완성해내는 것이 특기입니다. 저에게는 무엇이든 주어진 일에 끈기를
+              가지고 끝까지 해내는 성실함과 근성을 가졌습니다. 또한 어디에
+              소속되어도 잘 융합되는 우유처럼 그 안에서 한몫을 할 수 있는
+              인재입니다. 저를 성장시켜 주실 회사에서 최선의 노력과 꾸준함으로
+              꼭 인정받는 사람이 되겠습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="feature3">
+        <div class="inner">
+          <div class="heading">
+            <h2>Education</h2>
+            <p>
+              2012.03 - 2015.02 신일여자중학교(미술중점)<br />
+              2015.03 - 2018.02 신일여자고등학교(미술반)<br />
+              2018.03 - 2022.02 동국대학교 경주캠퍼스(미술학과) <br />
+              2019.08 - 2020.02 시나카린위롯대학교(비주얼아트학과 교환학생)
+            </p>
+            <h2>
+              Technical<br />
+              Certification & Aword
+            </h2>
+            <span
+              >2022.03 포토샵 GTQ 1급<br />
+              2016.11 제 4회 학교체육 및 체육교육 활성화를 위한 스포츠 창의
+              아이디어 공모전<br />
+              -스포프웨어부문 장려상</span
+            >
+          </div>
+        </div>
+      </section>
+      <section id="feature4">
+        <div class="inner">
+          <div class="heading">
+            <div class="saying">
+              <h1>MY SKILLS</h1>
+              <div class="saying-face">
+                <img class="active" src="img/html.png" data-alt="tab1" />
+                <img src="img/css.png" data-alt="tab2" />
+                <img src="img/js.png" data-alt="tab3" />
+                <img src="img/ps.png" data-alt="tab4" />
+              </div>
+              <div class="saying-content">
+                <div class="saying-content-tab active" id="tab1">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nam, voluptatum quae asperiores molestiae beatae ratione
+                    nobis expedita animi. Magni recusandae cupiditate dolore
+                    dolor deleniti dolorem animi vitae itaque quas odio.
+                    Quisquam, culpa soluta? Voluptate quaerat ab cupiditate
+                    dolorem dignissimos! Dolorem distinctio illum necessitatibus
+                    dolore voluptatem! Adipisci reprehenderit eaque nobis
+                    libero!
+                  </p>
                 </div>
-                <!--section2-->
-                <div class="section" id="section2">
-                    <div class="inner">
-                        <p class="tit">ABOUT <br>intro</p>
-                        <div class="countBox">
-                            <p class="count">
-                                이름 : 우유정<br>
-                                이메일 : wyoo0703@gmail.com<br>
-                                생년월일 : 1999.07.03<br>
-                                주소지 : 대전광역시 동구 우암로</p>
-                            <p class="txt"><strong>제 이름 속 `우유`처럼 저는 우유입니다.</strong><br>
-                                우유는 생우유도 요구르트로도 치즈로도 변신할 수 있습니다. 지금은 우유지만 저를 성장시켜 주실 회사에 입사하여 좀 더 성숙한 치즈와 요구르트가 되고 싶습니다. 저는 무언가를 탐구하고 알아가는 것을 좋아합니다. <br><br>
-                                무언가를 연구하고 고민 끝에 저만의 방식을 찾아 완성해내는 것이 특기입니다. 저에게는 무엇이든 주어진 일에 끈기를 가지고 끝까지 해내는 성실함과 근성을 가졌습니다. 또한 어디에 소속되어도 잘 융합되는 우유처럼 그 안에서 한몫을 할 수 있는 인재입니다.<br><br>
-                                저를 성장시켜 주실 회사에서 최선의 노력과 꾸준함으로 꼭 인정받는 사람이 되겠습니다.</p>
-                        </div>
-                    </div>
+                <div class="saying-content-tab" id="tab2">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatum fugit nisi rem ea labore adipisci voluptatem
+                    velit distinctio consectetur! Nesciunt ratione earum cumque,
+                    voluptate necessitatibus unde a eos velit fugit non labore
+                    quam ducimus, praesentium dolore accusamus placeat nihil
+                    repellendus culpa at sit. Expedita veritatis voluptate
+                    temporibus accusamus neque iusto.
+                  </p>
+                  <b>Amy, Graphic Designer</b>
                 </div>
-                <!--section3-->
-                <div class="section" id="section3">
-                    <div class="inner">
-                        <div class="topBox">
-                            <p class="tit">
-                                Education
-                            </p>
-                            <p class="txt">
-                                2012.03 - 2015.02 신일여자중학교(미술중점)<br>
-                                 2015.03 - 2018.02 신일여자고등학교(미술반)<br>
-                                  2018.03 - 2022.02 동국대학교 경주캠퍼스(미술학과)<br> 
-                                  2019.08 - 2020.02 시나카린위롯대학교(비주얼아트학과 교환학생)</p>
-                            <p class="tit">
-                                Technical<br> Certification & Aword
-                            </p>
-                           
-                            <p class="txt">2022.03 포토샵 GTQ 1급<br>
-                                2016.11 제 4회 학교체육 및 체육교육 활성화를 위한 스포츠 창의 아이디어 공모전<br> -스포프웨어부문 장려상
-                            </p>
-                        </div>
-                    </div>
+                <div class="saying-content-tab" id="tab3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus, quas? Nostrum doloremque consequuntur atque, ipsam
+                    vero optio. Aspernatur tenetur atque voluptas quos vero
+                    cupiditate nisi ratione maiores id quia repellat fugiat
+                    minus provident repudiandae voluptate, consequatur earum, in
+                    accusamus aliquid. Vel sint debitis harum, consectetur
+                    distinctio at ducimus accusantium voluptatum?
+                  </p>
                 </div>
-                <!--section4-->
-                <div class="section" id="section4">
-                    <div class="inner">
-                        <div class="topBox">
-                            <p class="txt">HTML&CSS</p>
-                            <p class="txt">JAVASCRIPT</p>
-                            <p class="txt">DESIGN</p>
-                        </div>
-                        <div class="tit">
-                            <p class="tit"><b>HTML5 ,CSS3(SASS)</b> <br>웹표준과 접근성을 바탕으로 HTML 정보구조를 설계하여 웹사이트를 퍼블리싱을 하고있습니다. 웹 표준성을 준수하기 위해 시멘틱트그를 이용하여 전체적인 레이아웃을 설계합니다.<br>크로스브라우징을 위해 안정적인 CSS속성을 사용하여 HTML Element를 배치하고 디자인할 수 있습니다. 레이아웃의 기존방식인 float과 최신트렌드인 flex 기법을 적재적소에 활용할 수 있습니다.생산성과 협업성을 위해SASS 기본 문법 또한 숙지하고 있습니다.</p>
-                            
-                            <p class="tit"><b>JAVA SCRIPT</b><br> 이미지 슬라이드, 마우스 휠, 슬라이드 배너, 네비게이션, 탭 메뉴, 아코디언 등의 기본적인 제이쿼리 기능을 사용할 줄 알며, 순수 바닐라 스크립트와 신 ES6문법을 사용할 줄 압니다. 기초 문법과 제어문을 숙지, 객체와 메소드 개념, 사용자정의 함수 등을 이해하고 있으며, 템플릿 모듈 소스코드의 일부를 분석과 편집, 리뉴얼 하드코딩 작업이 가능합니다
-                            </p>
-                            <p class="tit"><b>Design</b><br> Photoshop / Illustration / XD / premiere / figma 등 기본적인 툴을 다루고 창작물을 만들어 낼 수 있습니다.<br>
-                            <b>RESPONSIVE WEB </b><br>
-                            반응형 웹 제작에 있어서 크로스브라우징을 위해 안정적인 기존방식인 float, Position,Query media를 활용한 반응형 웹 제작 경험을 충분히 가지고 있습니다.
-                            </p>
-                        </div>
-                        </div>
-                        <h3>SKILLS</h3>
-                    </div>
-                
-                <!--section5-->
-                <div class="section" id="section5">
-                    <div class="inner">
-                        <div class="container">
-                            <section class="website">
-                              <div class="website-inner">
-                                <h1>Website Publishing</h1>
-                                <div class="content-inner">
-                                  <input type="radio" name="weblist" id="web-tab1" checked>
-                                  <input type="radio" name="weblist" id="web-tab2">
-                                  <input type="radio" name="weblist" id="web-tab3">
-                                  <input type="radio" name="weblist" id="web-tab4">
-                                  <input type="radio" name="weblist" id="web-tab5">
-                                  <div class="web-tab-btn">
-                                    <label for="web-tab1">PORTFOLIO</label>
-                                    <label for="web-tab2">도미노피자 리뉴얼</label>
-                                    <label for="web-tab3">Type Of Butter</label>
-                                    <label for="web-tab4">web portfolio</label>
-                                    <!-- <label for="web-tab5">live music</label> -->
-                                  </div>
-                                  <div class="web-tabs">
-                                    <div class="web-tab">
-                                      <div class="tab-inner">
-                                        <div class="web-photo">
-                                          <img src="img/website-thum-01.png">
-                                        </div>
-                                        <div class="tab-info">
-                                          <h3>portfolio</h3>
-                                          <p>
-                                            눈이 편안하고 익숙한 베이지 톤을 메인 컬러로하여<br>
-                                            transition과 animation 효과를 주어 너무 정적인<br>
-                                            느낌이 들지 않도록 하였습니다.
-                                          </p>
-                                          <ul>
-                                            <li>UI 디자인 방식: Photoshop, XD</li>
-                                            <li>퍼블리싱 제작방식: HTML+CSS+JQUERY(JS)</li>
-                                            <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                                            <li>플러그인: Slick slider</li>
-                                            <li>제작 참여율: 100%</li>
-                                          </ul>
-                                          <div class="result-buttons">
-                                            <a class="btn" href="portfolio/website-publishing/01/index.html" data-featherlight="iframe">PC Ver.</a>
-                                            <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-01.html" data-featherlight="iframe">Mobile Ver.</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="web-tab">
-                                      <div class="tab-inner">
-                                        <div class="web-photo">
-                                          <img src="img/website-thum-02.jpg">
-                                        </div>
-                                        <div class="tab-info">
-                                          <h3>도미노피자</h3>
-                                          <p>
-                                           도미노피자의 유명한 포인트 컬러의 로고를<br>사용하되 고급진 이미지를 주고자,<br>포메인의 스크롤 방식을 따라하여 <br>
-                                           고급진 이미지로 바꾸어 보았습니다.
-                                          </p>
-                                          <ul>
-                                            <li>UI 디자인 방식: Photoshop, XD</li>
-                                            <li>퍼블리싱 제작방식: HTML+CSS+JQUERY(JS)</li>
-                                            <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                                            <li>플러그인: Slick slider</li>
-                                            <li>제작 참여율: 100%</li>
-                                          </ul>
-                                          <div class="result-buttons">
-                                            <a class="btn" href="portfolio/website-publishing/02/index.html" data-featherlight="iframe">PC Ver.</a>
-                                            <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-02.html" data-featherlight="iframe">Mobile Ver.</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="web-tab">
-                                      <div class="tab-inner">
-                                        <div class="web-photo">
-                                          <img src="img/butterweb.png">
-                                        </div>
-                                        <div class="tab-info">
-                                          <h3>Type Of Butter</h3>
-                                          <p>
-                                            제가 좋아하는 음식인 버터를 메인으로 <br>판매하는 사이트를 간단하게 만들어<br> 보았습니다. 반응형인것에<br> 최대한의 중점을 두었습니다. 
-                                          </p>
-                                          <ul>
-                                            <li>UI 디자인 방식: Photoshop,XD</li>
-                                            <li>퍼블리싱 제작방식: HTML+CSS+JQUERY(JS)</li>
-                                            <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                                            <li>플러그인: Slick slider</li>
-                                            <li>제작 참여율: 100%</li>
-                                          </ul>
-                                          <div class="result-buttons">
-                                            <a class="btn" href="portfolio/website-publishing/03/index.html" data-featherlight="iframe">PC Ver.</a>
-                                            <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-03.html" data-featherlight="iframe">Mobile Ver.</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="web-tab">
-                                      <div class="tab-inner">
-                                        <div class="web-photo">
-                                          <img src="img/우유정 웹작업물1.png">
-                                        </div>
-                                        <div class="tab-info">
-                                          <h3>web portfolio</h3>
-                                          <p>
-                                            사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게 UI/UX 구조설계를 진행하였습니다. 그리고 기존 사이트에서 반응형 페이지가 될수 있도록 제작했습니다.
-                                          </p>
-                                          <ul>
-                                            <li>UI 디자인 방식: Photoshop</li>
-                                            <li>퍼블리싱 제작방식: HTML+CSS+JQUERY(JS)</li>
-                                            <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                                            <li>플러그인: Slick slider</li>
-                                            <li>제작 참여율: 100%</li>
-                                          </ul>
-                                          <div class="result-buttons">
-                                            <a class="btn" href="portfolio/website-publishing/04/index.html" data-featherlight="iframe">기획서</a>
-                                            <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-04.html" data-featherlight="iframe">GitHub</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </section>
-                          </div>
-                    </div>
+                <div class="saying-content-tab" id="tab4">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Alias ea tempore mollitia eligendi sit facere animi maxime
+                    iusto distinctio reiciendis beatae adipisci, quae deserunt
+                    blanditiis! Neque veritatis quod dicta, maxime, doloremque
+                    minima at quo cum, dolor dolorum dignissimos autem natus
+                    nesciunt. Asperiores cupiditate beatae ipsum dicta cumque
+                    voluptatibus et nulla.
+                  </p>
                 </div>
-            
-                <!--section6-->
-                <div class="section" id="section6">
-                    <div class="inner">
-                        <div class="topBox">
-                            
-                        </div>
-                        <section class="practical">
-                            <div class="section-inner">
-                              <div class="section-title">
-                                <h1>Practical Publishing</h1>
-                              </div>
-                              <div class="practical-content">
-                                <div class="practical-slider" uk-lightbox>
-                                  <div class="practical-item">
-                                    <a href="portfolio/practical-coding/animation/01/index.html"><img src="img/cunter.png"></a>
-                                  </div>
-                                  <div class="practical-item">
-                                    <a href="portfolio/practical-coding/animation/02/index.html"><img src="img/dragndrap.png"></a>
-                                  </div>
-                                  <div class="practical-item">
-                                    <a href="portfolio/practical-coding/animation/03/index.html"><img src="img/drawing.png"></a>
-                                  </div>
-                                  <div class="practical-item">
-                                    <a href="portfolio/practical-coding/animation/04/index.html"><img src="img/drink.png"></a>
-                                  </div>
-                                  <div class="practical-item">
-                                    <a href="portfolio/practical-coding/animation/05/index.html"><img src="img/heart.png"></a>
-                                  </div>
-                                  
-                                </div>
-                              </div>
-                            </div>
-                          </section>
-                        </div> 
-                    </div>
-                  </div>
-                <!--footer-->
-                <div class="section fp-auto-height" >
-                    <div class="footer">
-                        <div class="topBox">
-                 
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
           </div>
-            <!--오른쪽 네비-->
-            <ul class="rightNav" id="rightNav">
-                <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><span>홈</span></a></li>
-                <li data-menuanchor="secondPage"><a href="#secondPage"><span>ABOUT</span></a></li>
-                <li data-menuanchor="thirdPage"><a href="#thirdPage"><span>EDUCATION</span></a></li>
-                <li data-menuanchor="fourthPage"><a href="#fourthPage"><span>SKILLS</span></a></li>
-                <li data-menuanchor="fifthPage"><a href="#fifthPage"><span>PORTFOLIO</span></a></li>
-                <li data-menuanchor="sixthPage"><a href="#sixthPage"><span>JAVASCRIPT</span></a></li>
-                <li data-menuanchor="seventhPage"><a href="#seventhPage"><span>FOOTER</span></a></li>
-
-            </ul>
         </div>
+      </section>
+      <section id="feature5">
+        <div class="inner">
+          <div class="heading">
+            <section class="portfolio">
+              <div class="headline-share">
+                <h1>publishing</h1>
+              </div>
+              <div class="items">
+                <aside class="item">
+                  <b>Web Portfolio</b>
+                  <h2>Website Publishing</h2>
+                  <p class="font-noto">
+                    사용자의 편리성을 생각하며 미술이라는 컨텐츠와 어울리게
+                    UX/UI 구조설계를 진행하였습니다. 그리고 기존 사이트에서
+                    반응형 페이지가 될수 있도록 제작했습니다.
+                    <br /><br />
+                    전체 폰트 중 영문은 Montserrat, 한글은 Noto Sans KR을
+                    사용했으며, 제작기간은 2021년 01월 22일부터 28일까지입니다.
+                  </p>
+                  <p class="font-noto portfolio-info">
+                    <span>UI 디자인 방식: Photoshop</span>
+                    <span>퍼블리싱 제작방식: HTML+CSS+JQUERY</span>
+                    <span>레이아웃 제작방식 : CSS Grid & Flex</span>
+                    <span>플러그인: Slick slider</span>
+                    <span>제작 참여율: 100%</span>
+                  </p>
+                </aside>
+                <div class="item thum">
+                  <div class="photo"></div>
+                  <span class="portfolio-title">
+                    Website portfolio #01
+                    <a
+                      class="btn-view pc"
+                      href="html/web-portfolio-01.html"
+                      data-featherlight="iframe"
+                      >기획서</a
+                    >
+                    <a
+                      class="btn-view mobile"
+                      href="html/web-portfolio-02.html"
+                      data-featherlight="iframe"
+                      >GITHUB</a
+                    >
+                  </span>
+                </div>
+                <div class="item thum">
+                  <div class="photo"></div>
+                  <span class="portfolio-title">
+                    Website portfolio #02
+                    <a
+                      class="btn-view pc"
+                      href="html/web-portfolio-02.html"
+                      data-featherlight="iframe"
+                      >기획서</a
+                    >
+                    <a
+                      class="btn-view mobile"
+                      href="html/web-portfolio-02.html"
+                      data-featherlight="iframe"
+                      >GITHUB</a
+                    >
+                  </span>
+                </div>
+                <div class="item thum">
+                  <div class="photo"></div>
+                  <span class="portfolio-title">
+                    Website portfolio #03
+                    <a
+                      class="btn-view pc"
+                      href="html/web-portfolio-03.html"
+                      data-featherlight="iframe"
+                      >PC</a
+                    >
+                    <a
+                      class="btn-view mobile"
+                      href="html/web-portfolio-02.html"
+                      data-featherlight="iframe"
+                      >GITHUB</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="feature6">
+        <div class="inner">
+          <div class="heading">
+            <b>Lorem ipsum dolor sit amet</b>
+            <h1>Section : Epilogue</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore
+              omnis, sit ratione qui amet harum adipisci fugit tempore excepturi
+              ex odit iusto doloribus error, provident in. Repellat, eum. Omnis
+              tempore aliquid, ipsum pariatur vel voluptatem. Repellat culpa
+              corrupti labore eveniet minus, sint facere voluptates rem,
+              consequuntur, cupiditate excepturi tempora. Magnam ratione odit
+              aperiam, ullam accusantium cumque! Laborum nihil odio
+              reprehenderit qui veniam ad in id incidunt sapiente fugiat dicta
+              explicabo vero officia rem impedit quasi voluptates perspiciatis
+              assumenda, unde perferendis sit enim! Hic beatae quae aliquid
+              blanditiis? Veniam mollitia eos rerum impedit aut maiores harum
+              itaque adipisci laudantium est?
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
+
+    <script>
+      $(".toggle").click(function () {
+        $(".toggle, .overlay, .gnb").toggleClass("active");
+      });
+      $(".gnb a").click(function () {
+        $(".toggle, .overlay, .gnb").removeClass("active");
+      });
+    </script>
+  </body>
 </html>
