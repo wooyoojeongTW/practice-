@@ -56,7 +56,7 @@ section.portfolio {
   display: grid;
   justify-items: center;
   align-content: center;
-  /* background: url(images/background.png); */
+  background: url(img/background.png);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -69,17 +69,19 @@ section.portfolio {
 .item.thum .photo {
   /* border: 1px solid #000; */
   height: 400px;
-  width: 100%;
+  width: 300px;
   border-radius: 15px;
   box-shadow: 0 15px 45px -10px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
+.if
 .item.thum .photo img {
   width: inherit;
   height: inherit;
   object-fit: cover;
   object-position: top;
   transition: 2s;
+
 }
 .item.thum:hover .photo img {
   object-position: bottom;
