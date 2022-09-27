@@ -1,113 +1,199 @@
 /* Google Web Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+/* Web Fonts : Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 
-/* Remix Icon */
-@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+/* XEICON CDN  */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #222;
-  font-weight: 300;
-  font-size: 14px;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
-
-/* Section Layout & Title */
-.section-inner {
-  width: 1280px;
-  margin: 50px auto;
-}
-.section-title h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #000;
-  letter-spacing: 1px;
-  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.6em;
 }
 
-/* ####### PRACTICAL SECTION ####### */
-.practical-content h4 {
-  position: relative;
-  font-family: 'Noto sans KR', sans-serif;
-  font-weight: 600;
-  margin-left: 5px;
+/* Toggle Trigger */
+.toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
 }
-.practical-item {
-  margin: 0 5px;
-}
-.practical-item:hover img {
-  border: 1px solid #f5e8d1;
-}
-.practical-item img {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #f5e8d1;
-  transition: 0.35s;
-}
-
-/* Custom CSS : Slick */
-.practical-slider .slick-prev {
-  left: -40px;
-}
-.practical-slider .slick-prev:before {
-  content: '\ea64';
-  font-family: remixicon;
-  color: #e29f29;
-  font-size: 35px;
-}
-.practical-slider .slick-next {
-  right: -30px;
-}
-.practical-slider .slick-next:before {
-  content: '\ea6e';
-  font-family: remixicon;
-  color: #e29f29;
-  font-size: 35px;
-}
-.practical-slider .slick-dots li button::before {
+.toggle i {
+  width: 40px;
+  height: 40px;
   font-size: 30px;
-  color: #e29f29; 
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
-/* Custom CSS : UIkit */
-.uk-lightbox {
-  background: #fff;
+/* Toggle Trigger */
+.toggle.active i {
+  background-color: #D3C9BC;
+  transform: rotate(315deg);
 }
-.uk-lightbox-toolbar {
-  background-color: transparent; 
-  margin: 10px;
-}
-.uk-lightbox-toolbar-icon {
-  color: #fff;
-  background-color: #e29f29;
-  border-radius: 50%;
-  padding: 10px;
-  transition: 0.35s;
-}
-.uk-lightbox-toolbar-icon:hover {
+
+/* Overlay */
+.overlay {
+  position: fixed;
   background-color: #000;
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
 }
-.uk-lightbox-iframe {
-  width: 100%; height: 100%;
-}
-/* 상단 닫기 버튼 항상 보이게 */
-.uk-transition-slide-top {
-  --uk-translate-y: 0;
-}
-/* Next Prev 버튼 항상 보이게 */
-.uk-transition-fade, 
-[class*=uk-transition-scale], 
-[class*=uk-transition-slide] {
+.overlay.active {
+  transform: scale(130);
   opacity: 1;
 }
 
+/* Common CSS */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+section .inner {
+  width: 1150px;
+  text-align: center;
+}
+
+/* Section : Welcome */
+section.welcome {
+  height: 100vh;
+
+  width: 100%;position: relative;
+}
+section.welcome h1{
+  font-size: 150px;
+  line-height: 130px;
+  margin-left: -580px;
+  margin-top: 300px;
+position: absolute;
+color: #CBBFB0;
+}
+section.welcome img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.heading {}
+.heading h1 {
+  font-size: 3em;
+  position: relative;
+  padding-bottom: 40px;
+}
+.heading h1:before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background-color: #D3C9BC;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.heading p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.gnb {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  /* visibility: hidden; */
+  pointer-events: none;
+  transition: 0.5s;
+}
+.gnb.active {
+  opacity: 1;
+  /* visibility: visible; */
+  pointer-events: all;
+}
+.gnb a {
+  color: #fff;
+  text-decoration: none;
+  font-family: ' Noto sans KR', serif;
+  font-size: 3.5em;
+  line-height: 1.6em;
+  position: relative;
+  padding-right: 20px;
+}
+.gnb a:after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 0;
+  background-color: #D3C9BC;
+  left: 0;
+  bottom: 7px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.gnb a:hover:after {
+  width: 100%;
+}
+
+
+#feature1{position: relative;}
+#feature2{position: relative;}
+#feature3{position: relative;}
+#feature4{position: relative;}
+
+#feature5{position: relative;}
+#feature5 .portfolio{
+  position: absolute;
+  /* outline: 1px solid pink; */
+  margin-top: -380px;
+  margin-left: -90px;
+  
+}
+#feature5 .font-noto{
+  text-align: justify;
+  font-size: 14px;
+}
+#feature5 .portfolio-info{
+  margin-top: 30px;
+  text-align: left;
+  font-size: 12px;
+}
+
+
+#feature6{position: relative;}
+
+
+
+
+.

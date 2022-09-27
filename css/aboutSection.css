@@ -1,0 +1,18 @@
+@charset "utf-8";
+.heading>h2:nth-child(1){font-size: 100px;
+text-align: left;color: #CBBFB0;}
+.heading >p{
+  text-align:left ;
+  font-size: 14px;
+  color: #444;
+}
+.heading >h2{
+  font-size: 100px;
+line-height:120px;
+text-align: right;
+color: #B1A28F;}
+
+.heading> span{
+  text-align: right;
+color: #444F;
+}
